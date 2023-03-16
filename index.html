@@ -9,12 +9,12 @@
 			font-family: Arial, sans-serif;
 			margin: 0;
 			padding: 0;
-            background-color: rgb(223, 226, 227);
+            background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);;
 		}
 
 		header {
-			background-color: #333;
-			color: #fff;
+			background-color: #ffffffe6;
+			color: #2e2d2d;
 			padding: 1rem;
 			text-align: center;
 		}
@@ -34,12 +34,81 @@
         
 		}
 
+        .about{
+            border-bottom: 1px solid black;
+            width: 300px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        .criteria{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 30px;
+            width: 600px;
+        }
+
+        .contact-us{
+            width: 180px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        .apply{
+            width: 170px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        .about-para{
+            border: 1px solid rgb(8, 8, 8);
+            background-color: rgb(255, 255, 255);
+            width: 1200px;
+            margin: 0 auto;
+            box-shadow: 25px 25px 10px rgba(0, 0, 0, 0.2)
+        }
+
+        .col-lg-12{
+            border: 1px solid rgb(8, 8, 8);
+            background-color: rgb(255, 255, 255);
+            width: 1200px;
+            margin: 0 auto;
+            box-shadow: 25px 25px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+
+        }
+
+        .offer{
+            font-size: 25px;
+        }
+    
+        .list{
+            font-size: larger;
+            border: 1px solid black;
+            width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #e0dee1b3;
+            color: rgb(71, 68, 68);
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        .form{
+            padding: 20px;
+            gap: 10px;
+        }
+
+
 		section h2 {
 			font-size: 1.5rem;
             margin: 0 auto;
-            width: 200px;
-            border-radius: 10px;
-            border: 2px solid rgba(51, 49, 49, 0.856);
+            width: 500px;
+            border-bottom: 1px solid black;
+        
 		}
 
 		section p {
@@ -107,22 +176,26 @@
 
 	<main>
 		<section>
-			<h2>About the Company</h2>
-			<p>We are in Salesforce ecosystem with more than 10 years of experience in different verticals of Salesforce platform. We have Knowledge &amp; Experience to help you to save your energy and invest in your worth business. We do Solutioning &amp; Designing to best fit Salesforce as per your Business model &amp; needs. We also suggest to best use out of the system. We do App-exchange products development and have expertise with product development life cycle &amp; customer support. We do consulting &amp; development and we are expert in the domain. Configuration, Implementation, Integration, App-exchange products, Lightning, LWC, Communities, Marketing, Einstein are our areas here.</p>
-			<p>We are looking for candidates, who can help us create a seamless, personalized experience for our customers and stakeholders through innovative solutions and who aspire to launch a dynamic career in the IT industry with xyz company.</p>
+			<h2 class="about">About the Company</h2>
+            <div class="about-para">
+			<p>• We are in Salesforce ecosystem with more than 10 years of experience in different verticals of Salesforce platform.<br><br> • We have Knowledge &amp; Experience to help you to save your
+                 energy and invest in your worth business.<br><br> • We do Solutioning &amp; Designing to best fit Salesforce as per your Business model &amp; needs.<br><br>•  We also suggest to best use out of the system.<br><br> • We do App-exchange products development and have expertise with
+                  product development life cycle &amp; customer support.<br><br> • We do consulting &amp; development and we are expert in the domain.<br><br>•  Configuration, Implementation, Integration, App-exchange products, Lightning, LWC, Communities, Marketing, Einstein are our areas here.<br><br>
+		    • We are looking for candidates, who can help us create a seamless, personalized experience for our customers and stakeholders through innovative solutions and who aspire to launch a dynamic career in the IT industry with xyz company.</p><br>
 			<p>Website: <a href="https://xyz.in/">https://xyz.in/</a></p>
+            </div>
 		</section>
 
     <section id="about">
       <div class="container">
         <div class="section-header">
-          <h2>Eligibility criteria and basic information</h2>
+          <h2 class="criteria">Eligibility criteria and basic information</h2>
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <p>We are in Salesforce ecosystem with more than 10 years of experience in different verticals of Salesforce platform. We have Knowledge & Experience to help you to save your energy and invest in your worth business. We do Solutioning & Designing to best fit Salesforce as per your Business model & needs. We also suggest to best use out of the system. We do App-exchange products development and have expertise with product development life cycle & customer support. We do consulting & development and we are expert in the domain. Configuration, Implementation, Integration, App-exchange products, Lightning, LWC, Communities, Marketing, Einstein are our areas here. We are looking for candidates, who can help us create a seamless, personalized experience for our customers and stakeholders through innovative solutions and who aspire to launch a dynamic career in the IT industry with xyz company.</p>
-            <p>Website: <a href="https://xyz.in/">https://xyz.in/</a></p>
-            <p>What we offer:</p>
+            
+            <h3 class="offer">What we offer:</h3>
+            <div class="list">
             <ul>
               <li>An amazing Career growth path to ensure your personal growth and skill enhancement</li>
               <li>Latest technologies to work on (LWC)</li>
@@ -142,6 +215,7 @@
               <li>Technical round</li>
               <li>HR round</li>
             </ol>
+            </div>
           </div>
         </div>
       </div>
@@ -151,20 +225,18 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="section-header">
-              <h2>Contact Us</h2>
+              <h2 class="contact-us">Contact Us</h2>
             </div>
             <div class="contact">
               <div class="row">
                 <div class="col-md-4">
                   <div class="contact-email">
-                    <i class="fa fa-envelope"></i>
                     <h3>Email</h3>
                     <p><a href="mailto:info@xyz.com">info@xyz.com</a></p>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="contact-phone">
-                    <i class="fa fa-phone"></i>
                     <h3>Phone Number</h3>
                     <p>+91 1234567890</p>
                   </div>
@@ -173,13 +245,34 @@
                 </div>
 
                   <section>
-                    <h2>Apply Now</h2>
-                    <form action="#" method="POST">
+                    <h2 class="apply">Apply Now</h2>
+                    <form action="#" method="POST" class="form">
                         <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="name">Middle Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="name">Last Name:</label>
                         <input type="text" id="name" name="name" required>
             
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required>
+
+                        <label for="Orgnisation">Orgnisation:</label>
+                        <input type="text" id="name" name="Orgnisation" required>
+            
+                        <label for="title">Title:</label>
+                        <input type="text" id="email" name="title" required>
+
+                        <label for="name">Address:</label>
+                        <input type="text" id="name" name="address" required>
+
+                        <label for="name">City:</label>
+                        <input type="text" id="name" name="city" required>
+
+                        <label for="name">Mobile No.:</label>
+                        <input type="number" id="name" name="number" required>
             
                         <label for="resume">Resume:</label>
                         <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
