@@ -5,11 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Nomination Form | XYZ Company</title>
 	<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Mohave:wght@700&family=Montserrat:wght@100;200;300;400;500;600;700&family=Nothing+You+Could+Do&display=swap');
+
 		body {
-			font-family: Arial, sans-serif;
+			font-family: 'Montserrat', sans-serif;
 			margin: 0;
 			padding: 0;
-            background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);;
+      background: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
 		}
 
 		header {
@@ -30,23 +33,24 @@
 
 		section {
 			margin-bottom: 2rem;
-            text-align: center;
-        
 		}
 
-        .about{
-            border-bottom: 1px solid black;
-            width: 300px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            font-size: 30px;
-        }
+    .about{
+     border-bottom: 1px solid black;
+     width: 400px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     font-size: 30px;
+     text-align: center;
+     font-weight: 25px;
+  }
 
         .criteria{
             margin-top: 20px;
             margin-bottom: 20px;
             font-size: 30px;
-            width: 600px;
+            width: 700px;
+            text-align: center;
         }
 
         .contact-us{
@@ -57,51 +61,58 @@
         }
 
         .apply{
-            width: 170px;
+            width: 200px;
             margin-top: 20px;
             margin-bottom: 20px;
             font-size: 30px;
+            text-align: center;
         }
 
         .about-para{
-            border: 1px solid rgb(8, 8, 8);
-            background-color: rgb(255, 255, 255);
-            width: 1200px;
-            margin: 0 auto;
-            box-shadow: 25px 25px 10px rgba(0, 0, 0, 0.2)
-        }
-
-        .col-lg-12{
-            border: 1px solid rgb(8, 8, 8);
+            padding: 25px;
             background-color: rgb(255, 255, 255);
             width: 1200px;
             margin: 0 auto;
             box-shadow: 25px 25px 10px rgba(0, 0, 0, 0.2);
-            padding: 20px;
+            text-align: center;
+            word-spacing: 0.6px;
+            font-size: 20px;
+        }
+
+        .col-lg-12{
+            background-color: rgb(255, 255, 255);
+            width: 1200px;
+            margin: 0 auto;
+            box-shadow: 25px 25px 10px rgba(0, 0, 0, 0.2);
+            padding: 30px;
 
         }
 
         .offer{
             font-size: 25px;
+            text-align: center;
         }
     
         .list{
-            font-size: larger;
-            border: 1px solid black;
+            font-size: 18px;
             width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #e0dee1b3;
+            background-color: #f0f0f0a9;
             color: rgb(71, 68, 68);
             font-weight: bold;
             border-radius: 8px;
+             box-shadow: 25px 25px 10px rgba(0, 0, 0, 0.2);
         }
 
         .form{
             padding: 20px;
             gap: 10px;
         }
-
+         
+        .about-details{
+          font-size: 18px;
+        }
 
 		section h2 {
 			font-size: 1.5rem;
@@ -118,21 +129,43 @@
             
 		}
 
+    .col-md-3{
+      text-align: center;
+    }
+
 		section ul {
 			margin: 0;
 			padding: 0;
 			list-style: none;
 		}
+    .ul-list{
+      border-bottom: 1px solid black;
+      width: 800px;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .job-details{
+      font-size: 18px;
+    }
 
 		section ul li {
 			margin-bottom: 0.5rem;
 		}
+
+    .selection-ul{
+      border-top: 1px solid black;
+      width: 800px;
+      margin-top: 10px;
+      padding: 15px;
+    }
 
 		section ul li a {
 			color: #333;
 			text-decoration: none;
 			font-weight: bold;
 		}
+
 
 		section ul li a:hover {
 			color: #666;
@@ -149,13 +182,32 @@
 		}
 
 		section form input[type="submit"] {
+      margin-top: 15px;
 			background-color: #333;
 			color: #fff;
-			padding: 0.5rem;
+			padding: 8px 20px;
 			border: none;
 			border-radius: 0.25rem;
 			cursor: pointer;
 		}
+
+    #resume{
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      font-size: 18px;
+      align-items: center;
+    }
+
+    .form input{
+      padding: 8px 150px;
+    }
+
+    .form label{
+      font-size: 16px;
+      padding: 10px;
+      font-weight: bolder;
+    }
 
 		section form input[type="submit"]:hover {
 			background-color: #666;
@@ -176,13 +228,14 @@
 
 	<main>
 		<section>
-			<h2 class="about">About the Company</h2>
+			<h2 class="about">About Our Company</h2>
             <div class="about-para">
-			<p>• We are in Salesforce ecosystem with more than 10 years of experience in different verticals of Salesforce platform.<br><br> • We have Knowledge &amp; Experience to help you to save your
-                 energy and invest in your worth business.<br><br> • We do Solutioning &amp; Designing to best fit Salesforce as per your Business model &amp; needs.<br><br>•  We also suggest to best use out of the system.<br><br> • We do App-exchange products development and have expertise with
-                  product development life cycle &amp; customer support.<br><br> • We do consulting &amp; development and we are expert in the domain.<br><br>•  Configuration, Implementation, Integration, App-exchange products, Lightning, LWC, Communities, Marketing, Einstein are our areas here.<br><br>
-		    • We are looking for candidates, who can help us create a seamless, personalized experience for our customers and stakeholders through innovative solutions and who aspire to launch a dynamic career in the IT industry with xyz company.</p><br>
-			<p>Website: <a href="https://xyz.in/">https://xyz.in/</a></p>
+              <h3>About Us</h3>
+			<p class="about-details"> We are in Salesforce ecosystem with more than 10 years of experience in different verticals of Salesforce platform.  We have Knowledge &amp; Experience to help you to save your
+                 energy and invest in your worth business.  We do Solutioning &amp; Designing to best fit Salesforce as per your Business model &amp; needs.  We also suggest to best use out of the system.  We do App-exchange products development and have expertise with
+                  product development life cycle &amp; customer support.  We do consulting &amp; development and we are expert in the domain.  Configuration, Implementation, Integration, App-exchange products, Lightning, LWC, Communities, Marketing, Einstein are our areas here.
+		    We are looking for candidates, who can help us create a seamless, personalized experience for our customers and stakeholders through innovative solutions and who aspire to launch a dynamic career in the IT industry with xyz company.</p><br>
+			<p>Click here to view <a href="https://xyz.in/">Official Website</a></p>
             </div>
 		</section>
 
@@ -196,25 +249,25 @@
             
             <h3 class="offer">What we offer:</h3>
             <div class="list">
-            <ul>
-              <li>An amazing Career growth path to ensure your personal growth and skill enhancement</li>
-              <li>Latest technologies to work on (LWC)</li>
-              <li>We have one of the best work environments in context to innovation and experimentation</li>
-              <li>Multiple projects and a variety of clients</li>
-              <li>Opportunities to expand horizons and explore your talents</li>
-              <li>Flexible and supportive work culture</li>
+            <ul class="ul-list">
+              <li>• An amazing Career growth path to ensure your personal growth and skill enhancement</li>
+              <li>• Latest technologies to work on (LWC)</li>
+              <li>• We have one of the best work environments in context to innovation and experimentation</li>
+              <li>• Multiple projects and a variety of clients</li>
+              <li>• Opportunities to expand horizons and explore your talents</li>
+              <li>• Flexible and supportive work culture</li>
+            </ul> 
+            <p class="job-details">Job Role: Salesforce Developer<br><br>
+            Remuneration: 5-8 Lacs per annum<br><br>
+            Stipend during probation of First 9 months: Rs. 15,000<br><br>
+            Employment Type: Full-time after successfully completing 9 months' probation<br><br>
+            Work Location: Jaipur, Rajasthan.
+             Selection Process:</p>
+            <ul class="selection-ul">
+              <li>1. Online test- Assessment duration will be of 2 hours 10 Min (10 min MCQs and 120 min Programming)</li>
+              <li>2. Technical round</li>
+              <li>3. HR round</li>
             </ul>
-            <p>Job Role: Salesforce Developer</p>
-            <p>Remuneration: 5-8 Lacs per annum</p>
-            <p>Stipend during probation of First 9 months: Rs. 15,000</p>
-            <p>Employment Type: Full-time after successfully completing 9 months' probation</p>
-            <p>Work Location: Jaipur, Rajasthan.</p>
-            <p>Selection Process:</p>
-            <ol>
-              <li>Online test- Assessment duration will be of 2 hours 10 Min (10 min MCQs and 120 min Programming)</li>
-              <li>Technical round</li>
-              <li>HR round</li>
-            </ol>
             </div>
           </div>
         </div>
@@ -229,13 +282,13 @@
             </div>
             <div class="contact">
               <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3">
                   <div class="contact-email">
                     <h3>Email</h3>
                     <p><a href="mailto:info@xyz.com">info@xyz.com</a></p>
                   </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                   <div class="contact-phone">
                     <h3>Phone Number</h3>
                     <p>+91 1234567890</p>
@@ -272,7 +325,7 @@
                         <input type="text" id="name" name="city" required>
 
                         <label for="name">Mobile No.:</label>
-                        <input type="number" id="name" name="number" required>
+                        <input type="text" id="name" name="number" required>
             
                         <label for="resume">Resume:</label>
                         <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
